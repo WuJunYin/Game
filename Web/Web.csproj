@@ -217,6 +217,10 @@
     <Content Include="Areas\User\Views\web.config" />
     <Content Include="Areas\UserInfo\Views\web.config" />
     <Content Include="Areas\Upload\Views\web.config" />
+    <Content Include="Areas\test\Views\web.config" />
+    <Content Include="libman.json" />
+    <Content Include="Areas\test2\Views\web.config" />
+    <Content Include="Areas\test3\Views\web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
@@ -263,6 +267,9 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Areas\SendSMS\Controllers\SendValidCodeController.cs" />
     <Compile Include="Areas\SendSMS\Models\CodeResult.cs" />
+    <Compile Include="Areas\test2\test2AreaRegistration.cs" />
+    <Compile Include="Areas\test3\test3AreaRegistration.cs" />
+    <Compile Include="Areas\test\testAreaRegistration.cs" />
     <Compile Include="Areas\Upload\Controllers\UploadController.cs" />
     <Compile Include="Areas\Upload\UploadAreaRegistration.cs" />
     <Compile Include="Areas\UserInfo\Controllers\UserLoginController.cs" />
@@ -292,6 +299,15 @@
   <ItemGroup>
     <Folder Include="Areas\SendSMS\Views\Shared\" />
     <Folder Include="Areas\SendSMS\Views\ValidSendCode\" />
+    <Folder Include="Areas\test2\Controllers\" />
+    <Folder Include="Areas\test2\Models\" />
+    <Folder Include="Areas\test2\Views\Shared\" />
+    <Folder Include="Areas\test3\Controllers\" />
+    <Folder Include="Areas\test3\Models\" />
+    <Folder Include="Areas\test3\Views\Shared\" />
+    <Folder Include="Areas\test\Controllers\" />
+    <Folder Include="Areas\test\Models\" />
+    <Folder Include="Areas\test\Views\Shared\" />
     <Folder Include="Areas\Upload\Models\" />
     <Folder Include="Areas\Upload\Views\Shared\" />
     <Folder Include="Areas\UserInfo\Models\" />
