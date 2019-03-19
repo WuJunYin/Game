@@ -1,0 +1,11 @@
+SVN 域名   https://DESKTOP-J8R939E/svn/Game/
+
+SVN 账号 wjy
+SVN 密码 wjy123
+
+
+数据库账号 sa
+数据库密码 111222
+
+项目账号 moerdb
+项目密码 fe6g#b6#gh@dr88

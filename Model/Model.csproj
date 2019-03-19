@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ACA4353-4EF9-4C3F-B588-5B3AAA943C46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acEntites.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>acEntites.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="acEntites.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="acEntites.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>acEntites.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_BiSaiInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_GoodNumber.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_MatchBaseInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_MathRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_MathUser.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomCardAllSorce.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomCardGameRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomCardQunBase.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomCardQunFriend.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomCardRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomWinCtrl.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_RoomWinCtrlLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_SysNews.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_User_Win_Ctrl.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_xitong.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_youxi.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_T_youxi_fangjian.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qian_dao.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_ProcErrorCollection.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tab_SendSMS.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBankDeposit.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBankSerialRes.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBankSerialResource.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBankWallet.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBattleMatchTable.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBattleRoomInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TChangeRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TChangeRecordUser.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TCharmExchange.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TContestInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TContestRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TContestUserRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempempgame.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TFasciChangeRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameIPRule.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameKindInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameLock.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameNameInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameRoomBase.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameRoomInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameRoomMsg.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameRoomTable.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGameServerInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGiveIngotRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGMRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGM_AwardType.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGM_OperationRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TLockCode.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TLoginRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMatchTable.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMoneyChangeRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMoneyExceptLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TProc_Error_Log.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TProp.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPropBuyGive.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPropDefine.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPropSale.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TReceiveMoneyDefind.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TReceiveMoneyRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRoomIPRule.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRoomRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TSendMoneyRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TSendMoneyRecord_New.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTransferRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserCallGM.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserList.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserLoginGame.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserMoneyChange.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserNameRule.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserProp.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUsers.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tUsers20161129.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUserVip.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TWLoginRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TZLoginRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo\UserInfoBackGroundModel.cs" />
+    <Compile Include="User\UserChangeMoney.cs" />
+    <Compile Include="User\UserInfoModel.cs" />
+    <Compile Include="Web_Activity.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AdminEmail.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AdminModifyLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Agency.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyAccountLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyBalanceLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyDayReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyMoneyChangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyPercentChange.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyPopeSet.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgencyRMBCost.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Agent.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgentPay.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgentRebate.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AgentUser.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AlmsConfig.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AlmsDrawLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AnalyData_DateOnline.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Analy_DateReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Analy_MonthReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Analy_NewUserReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_ApplyVipRoom.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Artifact.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_ArtifactLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Award.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_AwardLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Card.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_CharmExchangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_ClearFasciPropDefine.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_ClearFasciPropUseLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_ClearingLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Clothes.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_CompanyInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Config.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_ContestRank.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Count_AgencyOnline.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Count_OnlineUsers.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Count_RoomOnline.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_CreateID.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_DataAnaly_Users.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_DataClearLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_DayTaxReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_EveryoneBeSpread.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_EveryoneSpread.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_EveryoneSpreadRebate.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Exchange.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_FasciExchangeConfig.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_FasciExchangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_FengHao.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_FineryID.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_FriendLink.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_GameGuidList.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_GameInfo.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_GameMain.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_GameType.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_GUID.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_IndexFlash.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="web_IngotChangeGold.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_IngotChangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_IngotTransLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Log.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_LotterAward.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_LotterConfig.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_LotteriesLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_LotterLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_LotterSpecial.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_manage_admin.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Manage_Model.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Manage_Permission.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Manage_Popedom.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Manage_Resource.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_MatchAwardConfig.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_MatchSendType.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_MoneyChangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_MoneyStatEveryday.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_msg.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_NewsData.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_NewsType.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_PConfig.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_PlatWinLostDateReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_PlayerDayReport.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_PointChangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_PropChangeLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_PVAndIPStat.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Red.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Red20161029.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_RedCashLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_RedGiftLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_RedLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_RMBCost.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SendCode.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Share.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SMSLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SpreadPartner.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SpreadPartnerConfig.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SpreadPartnerRecharge.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SpreadUserRecharge.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Statistic.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_System.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TaxStatEveryDay.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TGClearingRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TGPayRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Tool_Action.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Tool_Admin.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Tool_Group.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Tool_GroupPermit.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Tool_Module.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Tool_UserPermit.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TransAssetLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TransfersAccount.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TransLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TuiGuang.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_TuiGuangLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_UserAlbum.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_UserAlbumColumn.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_UserApplyVipRecord.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_UserEmail.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_UserModifyLog.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Users.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="wx_user_info.cs">
+      <DependentUpon>acEntites.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="acEntites.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>acEntites.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="acEntites.edmx.diagram">
+      <DependentUpon>acEntites.edmx</DependentUpon>
+    </None>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="acEntites.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>acEntites.Context.cs</LastGenOutput>
+      <DependentUpon>acEntites.edmx</DependentUpon>
+    </Content>
+    <Content Include="acEntites.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>acEntites.edmx</DependentUpon>
+      <LastGenOutput>acEntites.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
